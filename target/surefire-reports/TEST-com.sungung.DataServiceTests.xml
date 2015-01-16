@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sungung.DataServiceTests" time="0.43" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Servers\glassfish4\jdk7\jre\bin"/>
+    <property name="java.vm.version" value="24.45-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7533"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\MyRepository\report-annotation"/>
+    <property name="java.runtime.version" value="1.7.0_45-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Servers\glassfish4\jdk7\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\parks\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\DevTools\Builder\apache-maven-3.1.0\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Servers\glassfish4\jdk7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 11.1.1\bin\..\.\bin;C:\ProgramData\Oracle\Java\javapath;C:\Servers\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft Application Virtualization Client;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files (x86)\Groovy\Groovy-1.8.6\bin;C:\Servers\glassfish4\jdk7\bin;C:\DevTools\Builder\apache-maven-3.1.0\bin;C:\DevTools\internet\curl;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\DevTools\Builder\apache-ant-1.9.2\bin\;C:\DevTools\Builder\gradle-1.11\bin;C:\DevTools\vagrant\bin;C:\DevTools\Java\spring-1.0.0.RC5\bin\;C:\Program Files (x86)\Notepad++\;D:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Servers\mongodb\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\parks\AppData\Roaming\npm;c:\program files (x86)\jetbrains\intellij idea 11.1.1\jre\jre\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\parks"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="idea.launcher.bin.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 11.1.1\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="parks"/>
+    <property name="java.class.path" value="C:\DevTools\Builder\apache-maven-3.1.0\boot\plexus-classworlds-2.4.2.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 11.1.1\lib\idea_rt.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Servers\glassfish4\jdk7\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher --no-plugin-registry --fail-fast --no-plugin-updates --strict-checksums --update-snapshots -f C:\MyRepository\report-annotation\pom.xml package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_45"/>
+    <property name="java.ext.dirs" value="C:\Servers\glassfish4\jdk7\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Servers\glassfish4\jdk7\jre\lib\resources.jar;C:\Servers\glassfish4\jdk7\jre\lib\rt.jar;C:\Servers\glassfish4\jdk7\jre\lib\sunrsasign.jar;C:\Servers\glassfish4\jdk7\jre\lib\jsse.jar;C:\Servers\glassfish4\jdk7\jre\lib\jce.jar;C:\Servers\glassfish4\jdk7\jre\lib\charsets.jar;C:\Servers\glassfish4\jdk7\jre\lib\jfr.jar;C:\Servers\glassfish4\jdk7\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\DevTools\Builder\apache-maven-3.1.0"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="searchCriteriaNullTest" classname="com.sungung.DataServiceTests" time="0.003"/>
+  <testcase name="brewerServiceSearchTest" classname="com.sungung.DataServiceTests" time="0.396"/>
+  <testcase name="repositoryIsUpAndRunningTest" classname="com.sungung.DataServiceTests" time="0.006"/>
+  <testcase name="brewerServicePageTest" classname="com.sungung.DataServiceTests" time="0.016"/>
+  <testcase name="brewerServiceSortTest" classname="com.sungung.DataServiceTests" time="0.009"/>
+</testsuite>

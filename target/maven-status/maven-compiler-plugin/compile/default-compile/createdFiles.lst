@@ -1,0 +1,7 @@
+com\sungung\Application.class
+com\sungung\model\Brewer.class
+com\sungung\service\BrewerRepository.class
+com\sungung\service\BrewerSearchCriteria.class
+com\sungung\service\BrewerService.class
+com\sungung\service\BrewerServiceImpl.class
+com\sungung\service\BaseRepository.class
