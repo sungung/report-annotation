@@ -11,7 +11,7 @@ Annotation report bean. name attribute is column label and columnIndex is the or
 
 ## Motivation
 
-Using report framework(Jasper etc..) for simple tableau report is overload. Those framework designed for visual report so it requires
+Using report framework(Jasper etc..) for simple tabular report is overload. Those framework designed for visual report so it requires
 undesirable resources for creating simple text list.
 
 When you have well defined report bean, always it becomes tedious task to create individual report by format by hand written code.
