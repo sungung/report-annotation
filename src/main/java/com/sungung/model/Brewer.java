@@ -1,5 +1,7 @@
 package com.sungung.model;
 
+import com.sungung.report.annotation.ReportField;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,24 +22,31 @@ public class Brewer implements Serializable {
     private Long id;
 
     @Column(nullable = false)
+    @ReportField(name = "Brewer", columnIndex = 0)
     private String name;
 
     @Column
+    @ReportField(name = "Contact", columnIndex = 1)
     private String contact;
 
     @Column
+    @ReportField(name = "Address", columnIndex = 6)
     private String address;
 
     @Column
+    @ReportField(name = "Suburban", columnIndex = 5)
     private String suburb;
 
     @Column(name = "postcode")
+    @ReportField(name = "Post", columnIndex = 4)
     private String postCode;
 
     @Column
+    @ReportField(name = "Phone", columnIndex = 2)
     private String phone;
 
     @Column
+    @ReportField(name = "Email", columnIndex = 3)
     private String email;
 
     @Column(name = "website")
