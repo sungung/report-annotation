@@ -58,6 +58,9 @@ public class Brewer implements Serializable {
     @Column(name = "beerselection")
     private String beerSelection;
 
+    @Column(name = "credit")
+    private Double credit;
+
     public Long getId() {
         return id;
     }
@@ -146,4 +149,11 @@ public class Brewer implements Serializable {
         this.beerSelection = beerSelection;
     }
 
+    public Double getCredit() {
+        return credit;
+    }
+
+    public void setCredit(Double credit) {
+        this.credit = credit;
+    }
 }

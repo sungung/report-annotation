@@ -10,10 +10,10 @@ import com.sungung.service.BrewerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.servlet.View;
 
 /**
  * @author PARK Sungung
@@ -35,24 +35,31 @@ public class BrewerController {
     @Autowired
     private BrewerService brewerService;
 
-    @RequestMapping
-    public ModelAndView brewers() {
+    @RequestMapping("/contacts")
+    public String brewers(Model model) {
         Page<Brewer> page = brewerService.findBrewers(new BrewerSearchCriteria(), null);
-        return new ModelAndView("brewer/list", ViewUtils.REPORT_DATA_SETS, page.getContent());
+        model.addAttribute("brewers", page.getContent());
+        return "brewer/contacts";
     }
 
-    @RequestMapping(value = "/contacts")
-    public ModelAndView address(HttpServletRequest request) {
+    @RequestMapping("/contacts.xls")
+    public ModelAndView excelReport() {
+        return instanceModelAndView(xlsView);
+    }
 
+    @RequestMapping("/contacts.pdf")
+    public ModelAndView pdfReport() {
+        return instanceModelAndView(pdfView);
+    }
+
+    @RequestMapping("/contacts.csv")
+    public ModelAndView Report() {
+        return instanceModelAndView(csvView);
+    }
+
+    private ModelAndView instanceModelAndView(Object view) {
         ModelAndView mav = new ModelAndView();
-
         Page<Brewer> page = brewerService.findBrewers(new BrewerSearchCriteria(), null);
-
-        String uri = request.getRequestURI();
-        // PDF report will be created if URL pattern is like /brewer/contacts.pdf and so on
-        // Without extension in URL, it will render HTML page.
-        String reportType = uri.substring((uri.lastIndexOf(".")+1));
-
         // Report file name of report
         mav.addObject(ViewUtils.REPORT_FILE_NAME, "Victoria_Brewer_Contacts");
         // Report title
@@ -61,18 +68,12 @@ public class BrewerController {
         mav.addObject(ViewUtils.REPORT_SHEET_LABEL, "Contacts");
         mav.addObject(ViewUtils.REPORT_DOMAIN_CLASS, Brewer.class);
         mav.addObject(ViewUtils.REPORT_DATA_SETS, page.getContent());
-
-        if ("xls".equalsIgnoreCase(reportType)) {
-            mav.setView(xlsView);
-        } else if ("csv".equalsIgnoreCase(reportType)) {
-            mav.setView(csvView);
-        } else if ("pdf".equalsIgnoreCase(reportType)) {
-            mav.setView(pdfView);
-        } else {
-            mav.setViewName("brewer/list");
-        }
-
+       if (view instanceof String) {
+           mav.setViewName((String) view);
+       } else {
+           mav.setView((View) view);
+       }
         return mav;
-
     }
+
 }

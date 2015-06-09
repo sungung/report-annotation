@@ -26,7 +26,7 @@
               No contacts
             </td>
           </tr>
-          <tr th:each="brewer : ${report_data}">
+          <tr th:each="brewer : ${brewers}">
             <td th:text="${brewer.name}">&nbsp;</td>
             <td th:text="${brewer.contact}">&nbsp;</td>
             <td th:text="${brewer.phone}">&nbsp;</td>
