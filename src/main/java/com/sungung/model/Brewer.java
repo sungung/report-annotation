@@ -6,12 +6,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
  * @author parks
  * @since 12/01/15 9:09 AM
  */
+@XmlRootElement(name = "person")
 @Entity
 public class Brewer implements Serializable {
 
