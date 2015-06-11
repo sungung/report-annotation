@@ -9,7 +9,6 @@ import org.springframework.data.domain.Pageable;
  * @since 0.0.1
  */
 public interface BrewerRepository extends BaseRepository<Brewer, Long> {
-
     Page<Brewer> findByNameIgnoreCase(String name, Pageable pageable);
-
+    Brewer findByNameAndSuburb(String name, String suburban);
 }
